@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/ArchivePoem/static/css/main.294cf3b8.chunk.css",
-    "main.js": "/ArchivePoem/static/js/main.1c49282b.chunk.js",
-    "main.js.map": "/ArchivePoem/static/js/main.1c49282b.chunk.js.map",
+    "main.js": "/ArchivePoem/static/js/main.cd7f65ea.chunk.js",
+    "main.js.map": "/ArchivePoem/static/js/main.cd7f65ea.chunk.js.map",
     "runtime-main.js": "/ArchivePoem/static/js/runtime-main.b148b1ea.js",
     "runtime-main.js.map": "/ArchivePoem/static/js/runtime-main.b148b1ea.js.map",
-    "static/js/2.8e4de44d.chunk.js": "/ArchivePoem/static/js/2.8e4de44d.chunk.js",
-    "static/js/2.8e4de44d.chunk.js.map": "/ArchivePoem/static/js/2.8e4de44d.chunk.js.map",
+    "static/js/2.89bfce4d.chunk.js": "/ArchivePoem/static/js/2.89bfce4d.chunk.js",
+    "static/js/2.89bfce4d.chunk.js.map": "/ArchivePoem/static/js/2.89bfce4d.chunk.js.map",
     "index.html": "/ArchivePoem/index.html",
     "static/css/main.294cf3b8.chunk.css.map": "/ArchivePoem/static/css/main.294cf3b8.chunk.css.map",
-    "static/js/2.8e4de44d.chunk.js.LICENSE.txt": "/ArchivePoem/static/js/2.8e4de44d.chunk.js.LICENSE.txt"
+    "static/js/2.89bfce4d.chunk.js.LICENSE.txt": "/ArchivePoem/static/js/2.89bfce4d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b148b1ea.js",
-    "static/js/2.8e4de44d.chunk.js",
+    "static/js/2.89bfce4d.chunk.js",
     "static/css/main.294cf3b8.chunk.css",
-    "static/js/main.1c49282b.chunk.js"
+    "static/js/main.cd7f65ea.chunk.js"
   ]
 }
