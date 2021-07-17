@@ -10,7 +10,11 @@ function App() {
   const [pushInput, setpushInput] = useState([]);
 
   function addCard(){
-    setpushInput(oldInputs =>{ return [...oldInputs, takeInput]});
+    if(takeInput.takeHeading===''){alert('Provide Heading')}
+    else if(takeInput.takeContent===''){alert('Provide Content')}
+    else if(takeInput.takeDatetime===''){alert('Provide Date')}
+    else if(takeInput.takeColor===''){alert('Provide Color')}
+    else{setpushInput(oldInputs =>{ return [...oldInputs, takeInput]});}
   }
 
   function deletecard(getindex){
@@ -38,7 +42,7 @@ function App() {
           <br />
           <div className="row ">
             <div className="form-group col-4">
-              <input type="datetime-local" className="form-control" onChange={(args)=>{settakeInput({...takeInput, takeDatetime:args.target.value})}} />
+              <input type="date" className="form-control" onChange={(args)=>{settakeInput({...takeInput, takeDatetime:args.target.value})}} />
             </div>
             <div className="form-group col-2">
                 <input type="color" className="form-control"  onChange={(args)=>{settakeInput({...takeInput, takeColor:args.target.value})}}  />
