@@ -1,0 +1,29 @@
+#div1{
+  float: left;
+  margin: 30px;
+  padding: 20px;
+  height: auto;
+  width: 350px;
+  text-align: center;
+  border: 2px solid purple;
+  border-radius: 50px;
+  background-color: lightgrey;
+}
+img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+}
+button{
+  width: 250px;
+  border: none;
+  font-weight: bold;
+  outline-offset: 1px;
+  outline-color: yellow;
+  background-color: rgb(236, 135, 76);
+  transition: outline-color 1s;
+}
