@@ -12,7 +12,7 @@ function Card({id, onselect=f=>f, heading, color, content }){
   
     return(
         <>
-        <div className="card card_align" style={{maxHeight: "auto", maxWidth:'330px', backgroundColor:color, margin:'10px'}}>
+        <div className="card card_align" style={{maxHeight: "auto", maxWidth:'400px', backgroundColor:color, margin:'10px'}}>
          <h3 className="card-header"> 
            {heading}<button onClick={()=>onselect(id)} className='pos_btn' style={{backgroundColor:color}}>x</button>
          </h3>  
