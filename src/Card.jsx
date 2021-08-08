@@ -1,26 +1,27 @@
 import React, { useState } from 'react';
 import './bootstrap.css';
 import './App.js';
+import './App.css';
 
-function Card(props){
+function Card({id, onselect=f=>f, heading, color, content }){
   const [isReadMore, setIsReadMore] = useState(true);
 
-  function toggler(){
+    function toggler(){
     setIsReadMore(!isReadMore);
   }
+  
     return(
         <>
-        <div className="card" style={{ maxWidth: "295px",maxHeight: "500px", backgroundColor:props.color, margin:'10px', boxSizing:'content-box' }}>
-         <h3 className="card-header">
-           {props.heading} 
-         </h3>
+        <div className="card card_align" style={{maxHeight: "auto", maxWidth:'330px', backgroundColor:color, margin:'10px'}}>
+         <h3 className="card-header"> 
+           {heading}<button onClick={()=>onselect(id)} className='pos_btn' style={{backgroundColor:color}}>x</button>
+         </h3>  
          <div className="card-body">
-           <p className="card-text">{isReadMore ? props.content.slice(0,200): props.content}
-            <span style={{cursor:'pointer', color:'yellow'}} onClick={toggler} >{isReadMore ? ">>>read more>>>" : "<<<show less<<<"}</span></p>
-         </div>
-         <h6 className="card-footer d-flex justify-content-center">
-          {props.datetime}
-         </h6>
+           <p className="card-text">{isReadMore ? content.slice(0,200): content} { content.length>200?
+            <span style={{cursor:'pointer', color:'yellow'}} onClick={toggler} >{ isReadMore ? ">>>read more>>>" : "<<<show less<<<"}</span>
+            :''}
+            </p>
+            </div>
          </div>
          </>
     )

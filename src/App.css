@@ -14,3 +14,29 @@ img{
   width: auto;
   color: black;
 }
+.card_align{
+  float: left;
+}
+.heading{
+  color: aqua;
+  animation: change infinite 2s;
+  text-align: center;
+}
+@keyframes change {
+  0%{
+    color: aqua;
+  }
+  50%{
+    color: rgb(25, 0, 139);
+  }
+  100%{
+    color: aqua;
+  }
+}
+.pos_btn{
+  position: absolute;
+  top:0px;
+  right: 0px;
+  border-radius:10px;
+  border:none; 
+}
